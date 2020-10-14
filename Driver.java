@@ -6,12 +6,26 @@ public class Driver{
         
 
         nemo.Swim();
-        nemo.color = "red "; //tukar value
-        nemo.Swim();
+      //  nemo.color = "red "; //tukar value
+      nemo.SetColor("red");//change here
 
-        Fish dory = new Fish();//another object
-        dory.Swim();
-        dory.color = "yellow ";
-        dory.Swim();
+        nemo.Swim();
+        //nemo.Eat();//superclass call subclass method
+
+        Shark fiery = new Shark();
+        fiery.Eat();
+        fiery.Swim();
+        fiery.SetSharpTeeth(2000);
+         fiery.Eat();
+
+
+       // Fish dory = new Fish();//another object
+      //  dory.Swim();
+      //  dory.color = "yellow ";
+     //   dory.SetColor("yellow");
+     //   dory.Swim();
+
+     //   Aquarium fancyAquarium = new Aquarium();
+      //  fancyAquarium.fillFish();
 	}
 }
